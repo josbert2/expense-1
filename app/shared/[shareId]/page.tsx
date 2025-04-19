@@ -28,6 +28,7 @@ interface Transaction {
   status: "Pagado" | "Pendiente"
 }
 
+
 export default function SharedLinkPage({ params }: { params: { shareId: string } }) {
   const router = useRouter()
   const shareId = params.shareId
