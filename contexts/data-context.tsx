@@ -66,30 +66,8 @@ export interface SplitExpense {
 
 // Datos de ejemplo para inicializar
 const examplePeople: Person[] = [
-  {
-    id: "1",
-    name: "Carlos Rodríguez",
-    totalLoaned: 150000,
-    totalPaid: 50000,
-    balance: 100000,
-    status: "Pendiente",
-  },
-  {
-    id: "2",
-    name: "María González",
-    totalLoaned: 75000,
-    totalPaid: 75000,
-    balance: 0,
-    status: "Pagado",
-  },
-  {
-    id: "3",
-    name: "Juan Pérez",
-    totalLoaned: 200000,
-    totalPaid: 50000,
-    balance: 150000,
-    status: "Pendiente",
-  },
+
+
   {
     id: "4",
     name: "Jose Castillo",
@@ -101,17 +79,17 @@ const examplePeople: Person[] = [
   {
     id: "5",
     name: "Barbara",
-    totalLoaned: 30000,
+    totalLoaned: 55000,
     totalPaid: 0,
-    balance: 30000,
+    balance: 55000,
     status: "Pendiente",
   },
   {
     id: "6",
     name: "Jose",
-    totalLoaned: 381480,
+    totalLoaned: 416480,
     totalPaid: 0,
-    balance: 381480,
+    balance: 416480,
     status: "Pendiente",
   },
   {
@@ -120,14 +98,6 @@ const examplePeople: Person[] = [
     totalLoaned: 278222,
     totalPaid: 0,
     balance: 278222,
-    status: "Pendiente",
-  },
-  {
-    id: "8",
-    name: "Pedro",
-    totalLoaned: 240000,
-    totalPaid: 40000,
-    balance: 200000,
     status: "Pendiente",
   },
   {
@@ -224,27 +194,12 @@ const exampleTransactions: Record<string, Transaction[]> = {
     {
       id: "401",
       personId: "4",
-      type: "Préstamo",
+      type: "Pago",
       amount: 49646,
       description: "Monto de la Cuota",
       date: "2023-12-01T00:00:00.000Z",
     },
-    {
-      id: "402",
-      personId: "4",
-      type: "Préstamo",
-      amount: 49646,
-      description: "Monto de la Cuota",
-      date: "2024-01-01T00:00:00.000Z",
-    },
-    {
-      id: "403",
-      personId: "4",
-      type: "Préstamo",
-      amount: 49646,
-      description: "Monto de la Cuota",
-      date: "2024-02-01T00:00:00.000Z",
-    },
+   
     {
       id: "404",
       personId: "4",
@@ -286,21 +241,14 @@ const exampleTransactions: Record<string, Transaction[]> = {
       date: "2024-07-01T00:00:00.000Z",
     },
     {
-      id: "409",
+      id: "411",
       personId: "4",
       type: "Préstamo",
-      amount: 49646,
-      description: "Monto de la Cuota",
-      date: "2024-08-01T00:00:00.000Z",
+      amount: 20000,
+      description: "Prestamo",
+      date: "2023-12-15T00:00:00.000Z",
     },
-    {
-      id: "410",
-      personId: "4",
-      type: "Préstamo",
-      amount: 100000,
-      description: "Pidio 100 prestado",
-      date: "2024-09-01T00:00:00.000Z",
-    },
+  
     {
       id: "411",
       personId: "4",
@@ -343,13 +291,37 @@ const exampleTransactions: Record<string, Transaction[]> = {
       description: "Préstamo personal",
       date: "2024-03-15T00:00:00.000Z",
     },
+    {
+      id: "502",
+      personId: "5",
+      type: "Préstamo",
+      amount: 25000,
+      description: "Préstamo personal",
+      date: "2024-03-15T00:00:00.000Z",
+    },
   ],
   "6": [
     {
       id: "601",
       personId: "6",
       type: "Préstamo",
-      amount: 381480,
+      amount: 281480,
+      description: "Préstamo personal",
+      date: "2024-03-20T00:00:00.000Z",
+    },
+    {
+      id: "602",
+      personId: "6",
+      type: "Pago",
+      amount: 100000,
+      description: "Pago",
+      date: "2024-03-20T00:00:00.000Z",
+    },
+    {
+      id: "602",
+      personId: "6",
+      type: "Préstamo",
+      amount: 135000,
       description: "Préstamo personal",
       date: "2024-03-20T00:00:00.000Z",
     },
